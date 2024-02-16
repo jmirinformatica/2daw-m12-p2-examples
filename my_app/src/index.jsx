@@ -1,3 +1,7 @@
+if (process.env.APP_ENV) {
+	console.log("Environment: " + process.env.APP_ENV)
+}
+
 import { render } from 'preact';
 import { LocationProvider, Router, Route } from 'preact-iso';
 
