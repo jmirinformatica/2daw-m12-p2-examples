@@ -1,12 +1,20 @@
 import preactLogo from '../../assets/preact.svg';
 import './style.css';
+import Container from 'react-bootstrap/Container';
+import Card from 'react-bootstrap/Card';
 
 export function Home() {
 	return (
 		<div class="home">
-			<a href="https://preactjs.com" target="_blank">
-				<img src={preactLogo} alt="Preact logo" height="160" width="160" />
-			</a>
+			<Container>
+				<Card style={{ width: '18rem' }} className="m-auto">
+					<Card.Img variant="top" src={preactLogo} height="160" width="160" />
+					<Card.Body>
+						<Card.Title><a href="https://preactjs.com" target="_blank">Preact.js</a></Card.Title>
+						<Card.Text>With React Bootstrap</Card.Text>
+					</Card.Body>
+				</Card>
+			</Container>
 			<h1 className="fs-1 text-decoration-underline">Get Started building Vite-powered Preact Apps </h1>
 			<section>
 				<Resource
