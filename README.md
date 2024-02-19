@@ -9,6 +9,10 @@ Framework Preact:
 Extensió navegador web per depurar Preact (debugging)
 [Preact Devtools](https://preactjs.github.io/preact-devtools/)
 
+## Desenvolupament
+
+Estils amb [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/download/#npm)
+
 ## Desplegament
 
 ### Entorn local
