@@ -14,6 +14,7 @@ if (process.env.APP_DEBUG) {
 
 import { render } from 'preact';
 import { LocationProvider, Router, Route } from 'preact-iso';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Header } from './components/Header.jsx';
 import { Home } from './pages/Home/index.jsx';
