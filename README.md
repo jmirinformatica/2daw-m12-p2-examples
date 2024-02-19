@@ -3,12 +3,14 @@ Aplicació client desenvolupada amb framework Preact
 
 ## Documentació oficial
 
-Framework Preact:
-[Preact](https://preactjs.com/)
+Framework [Preact](https://preactjs.com/)
 
-Extensió navegador web per depurar Preact (debugging)
-[Preact Devtools](https://preactjs.github.io/preact-devtools/)
+Extensió del navegador web per depurar codi (debugging): [Preact Devtools](https://preactjs.github.io/preact-devtools/)
 
+## Desenvolupament
+
+Estils amb [Tailwind CSS](https://tailwindcss.com/docs/guides/vite).
+g
 ## Desplegament
 
 ### Entorn local
