@@ -21,6 +21,7 @@ import { Home } from './pages/Home/index.jsx';
 import { NotFound } from './pages/_404.jsx';
 import './style.css';
 import Logger from './library/Logger.js'
+import { Container } from 'react-bootstrap'
 
 export function App() {
 	Logger.debug('App started (this message ONLY appears when debug is enabled)')
@@ -28,10 +29,12 @@ export function App() {
 		<LocationProvider>
 			<Header />
 			<main>
-				<Router>
-					<Route path="/" component={Home} />
-					<Route default component={NotFound} />
-				</Router>
+				<Container>
+					<Router>
+						<Route path="/" component={Home} />
+						<Route default component={NotFound} />
+					</Router>
+				</Container>
 			</main>
 		</LocationProvider>
 	);
