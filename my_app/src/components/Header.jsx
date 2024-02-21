@@ -14,9 +14,9 @@ export function Header() {
 					<Navbar.Brand href="/">Preact + React Bootstrap</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">						
-						<Nav>
-							<Nav.Link href="/" className={url == '/' && 'active'}>Home</Nav.Link>
-							<Nav.Link href="/404" className={url == '/404' && 'active'}>404</Nav.Link>
+						<Nav activeKey={url}>
+							<Nav.Link href="/" eventKey={"/"}>Home</Nav.Link>
+							<Nav.Link href="/404" eventKey={"/404"}>404</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
