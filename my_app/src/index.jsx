@@ -18,20 +18,24 @@ import './style.scss';
 
 import { Header } from './components/Header.jsx';
 import { Home } from './pages/Home/index.jsx';
+import { Login } from './pages/Auth/Login.jsx';
+import { Register } from './pages/Auth/Register.jsx';
 import { NotFound } from './pages/_404.jsx';
 import './style.css';
 import Logger from './library/Logger.js'
-import { Container } from 'react-bootstrap'
+import Container  from 'react-bootstrap/Container'
 
 export function App() {
 	Logger.debug('App started (this message ONLY appears when debug is enabled)')
 	return (
 		<LocationProvider>
-			<Header />
+			<Header user={null} />
 			<main>
 				<Container>
 					<Router>
 						<Route path="/" component={Home} />
+						<Route path="/login" component={Login} />
+						<Route path="/register" component={Register} />
 						<Route default component={NotFound} />
 					</Router>
 				</Container>

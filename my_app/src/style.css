@@ -21,15 +21,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background: #e4d8f5;
 }
 
 main {
 	flex: auto;
 	display: flex;
 	align-items: center;
-	max-width: 1280px;
 	margin: 0 auto;
-	text-align: center;
 }
 
 @media (max-width: 639px) {
