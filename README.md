@@ -1,4 +1,4 @@
-# 2daw-m12-p2-examples
+# preact-app
 Aplicació client desenvolupada amb framework Preact
 
 ## Documentació oficial
